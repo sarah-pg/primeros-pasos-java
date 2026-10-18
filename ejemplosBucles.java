@@ -21,7 +21,9 @@ public class Ejemplosbucles {
         //ej10();
         //ej11();
         //ej12();
-        ej13();
+        //ej13();
+        //ej14();
+        ej15();
     }
 
     private static void ej1() {
@@ -178,5 +180,31 @@ public class Ejemplosbucles {
             }
             i++;
         } while (i<=num2);
+    }
+
+    private static void ej14() {
+        //El bucle se repite mientras el total sumado sea inferior a 100
+        Scanner lector = new Scanner (System.in);
+        int num;
+        int total=0;
+        while (total<=100) {
+            System.out.println("Teclea un número: ");
+            num=lector.nextInt();
+            total+=num;
+        }
+    }
+    
+    private static void ej15() {
+        //El bucle se repite mientras el total sumado sea inferior a 100 y no permite dar más de 10 vueltas
+        Scanner lector = new Scanner (System.in);
+        int num;
+        int total=0;
+        int i=1;
+        while (total<=100 && i<=10) {
+            System.out.println("Teclea un número: ");
+            num=lector.nextInt();
+            total+=num;
+            i++;
+        }
     }
 }
